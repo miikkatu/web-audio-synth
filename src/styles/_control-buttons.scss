@@ -1,0 +1,34 @@
+.ControlButtons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 15px;
+
+  .ControlButton {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 75px;
+
+    .Function {
+      color: $light;
+      font-size: 9px;
+      padding-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .Button {
+      background-color: $turquoise;
+      border: none;
+      height: 25px;
+      outline: none;
+      text-transform: uppercase;
+
+      &:active {
+        background-color: $light;
+        transition: $transition;
+      }
+    }
+  }
+}

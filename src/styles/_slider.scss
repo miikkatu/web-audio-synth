@@ -1,0 +1,40 @@
+.Slider {
+  margin: 0 15px;
+  width: 50px;
+
+  .Function {
+    color: $light;
+    font-size: 9px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .Draggable {
+    background: linear-gradient(to right,
+      transparent 0%,
+      transparent calc(50% - 1px),
+      $grey calc(50% - 0.8px),
+      $grey calc(50% + 0.8px),
+      transparent calc(50% + 1px),
+      transparent 100%);
+    border: solid 1px $grey;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding-bottom: 5px;
+
+    .Handle {
+      background: $black;
+      border: solid 1px $grey-darkest;
+      border-radius: 5px;
+      margin: 3px;
+      height: 15px;
+
+      &:active {
+        background-color: $grey;
+        transition: $transition;
+      }
+    }
+  }
+}

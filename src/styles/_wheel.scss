@@ -1,0 +1,30 @@
+.Wheel {
+  margin: 0 10px;
+  width: 35px;
+
+  .Function {
+    color: $light;
+    font-size: 9px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .Draggable {
+    background: $grey-darkest;
+    display: flex;
+    flex-direction: column;
+    height: 178px;
+
+    .Handle {
+      background: $black;
+      margin-top: 5px;
+      height: 20px;
+
+      &:active {
+        background-color: $grey;
+        transition: $transition;
+      }
+    }
+  }
+}
